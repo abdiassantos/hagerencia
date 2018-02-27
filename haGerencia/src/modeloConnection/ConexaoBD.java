@@ -19,7 +19,7 @@ public class ConexaoBD {
     private String driver = "org.postgresql.Driver";
     private String caminho = "jdbc:postgresql://localhost:5432/hagerencia";
     private String usuario = "abdiassantos";
-    private String senha = "abdiasnivea";
+    private String senha = "Voljin!555";
     
     
     //CONECTA AO BANCO DE DADOS;

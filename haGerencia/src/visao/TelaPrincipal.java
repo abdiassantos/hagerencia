@@ -13,11 +13,6 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import modeloConnection.ConexaoBD;
-import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JRResultSetDataSource;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
@@ -153,16 +148,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonClientePrincipalActionPerformed
 
     private void jButtonRelatorioPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRelatorioPrincipalActionPerformed
-        try {
-            con.executaSql("select * from controlecliente");
-            JRResultSetDataSource relatResult = new JRResultSetDataSource(con.rs);
-            JasperPrint jpPrint = new JasperFillManager().fillReport("src/relatorios/controlecliente.jasper", new HashMap(), relatResult);
-            JasperViewer jv = new JasperViewer(jpPrint);
-            jv.setVisible(true);
-        } catch (JRException ex) {
-            JOptionPane.showMessageDialog(null, "Erro ao chamar o Relatório!\nErro: " + ex);
-        }
-        
+            JOptionPane.showMessageDialog(rootPane, "EM BREVE!");
     }//GEN-LAST:event_jButtonRelatorioPrincipalActionPerformed
 
     private void jButtonFacebookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFacebookActionPerformed
